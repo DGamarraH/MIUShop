@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ea</groupId>
-    <artifactId>miushop</artifactId>
+    <artifactId>miushop-order-processor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>miushop</name>
     <description>EA Final project</description>

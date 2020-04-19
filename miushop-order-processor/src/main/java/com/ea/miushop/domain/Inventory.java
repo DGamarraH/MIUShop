@@ -4,6 +4,8 @@ import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
+import javax.validation.Valid;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +28,7 @@ public class Inventory {
 	@Fetch(FetchMode.SUBSELECT)
 	@JoinTable ( name="inventory_movement", joinColumns={@JoinColumn(name="inventory_id")},
 			inverseJoinColumns={ @JoinColumn(name="storage_movement_id", unique=true)} )
+	@Valid
 	private List<StorageMovement> movements = new ArrayList<StorageMovement>();
 
 	@Version

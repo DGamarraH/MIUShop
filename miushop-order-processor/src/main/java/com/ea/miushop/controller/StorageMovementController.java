@@ -26,7 +26,7 @@ public class StorageMovementController {
     }
 
     @PostMapping(value = "new-storageMovement", produces = MediaType.APPLICATION_PROBLEM_JSON_VALUE)
-    public void makeStorageMovement(StorageMovement storageMovement){
+    public void makeStorageMovement(@RequestBody StorageMovement storageMovement){
         storageMovementService.makeStorageMovement(storageMovement);
     }
 }
