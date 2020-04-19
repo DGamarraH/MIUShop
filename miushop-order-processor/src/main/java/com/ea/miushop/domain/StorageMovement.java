@@ -2,6 +2,7 @@ package com.ea.miushop.domain;
 
 import javax.persistence.*;
 
+import com.ea.miushop.validation.NullMinNumber;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -15,6 +16,7 @@ public class StorageMovement {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long storageMovementId;
 
+//    @NullMinNumber(value=1, message = "{NullMinNumber}")
     @Column(nullable = false)
     private StorageMovementType storageMovementType;
 
