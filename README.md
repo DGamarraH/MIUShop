@@ -1,2 +1,4 @@
 # MIUShop
-Distributed Product Procurement System
+Proof of Concept for a Distributed Product Procurement System
+- Order Management
+- Stock Management
